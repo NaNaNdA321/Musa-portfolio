@@ -797,4 +797,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // 11. TOUCH SWIPE GESTURES FOR MOBILE & TABLET DEVICES
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    function enableSwipeGestures(modalElement, onSwipeNext, onSwipePrev) {
+        if (!modalElement) return;
+
+        modalElement.addEventListener('touchstart', (e) => {
+            if (e.touches.length === 1) {
+                touchStartX = e.touches[0].clientX;
+                touchStartY = e.touches[0].clientY;
+            }
+        }, { passive: true });
+
+        modalElement.addEventListener('touchend', (e) => {
+            if (e.changedTouches.length === 1) {
+                const touchEndX = e.changedTouches[0].clientX;
+                const touchEndY = e.changedTouches[0].clientY;
+                const diffX = touchEndX - touchStartX;
+                const diffY = touchEndY - touchStartY;
+
+                // Trigger swipe if horizontal movement is > 45px and greater than vertical movement
+                if (Math.abs(diffX) > 45 && Math.abs(diffX) > Math.abs(diffY)) {
+                    if (diffX < 0) {
+                        onSwipeNext();
+                    } else {
+                        onSwipePrev();
+                    }
+                }
+            }
+        }, { passive: true });
+    }
+
+    // Enable touch swipes for Work Modal & Lightbox
+    enableSwipeGestures(workModal, () => loadModalProject(currentProjectIndex + 1), () => loadModalProject(currentProjectIndex - 1));
+    enableSwipeGestures(lightboxModal, () => navigateLightbox(1), () => navigateLightbox(-1));
+
 });
