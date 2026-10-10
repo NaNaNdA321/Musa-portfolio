@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSA — Creative Director & Content Creator</title>
+    <meta name="description"
+        content="Musadadus Suudi - Creative Director & Content Creator berfokus pada visual storytelling, video production, dan photography.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Ambient Dynamic Glow Canvas/Overlay -->
+    <div class="ambient-light-beam" id="ambientBeam"></div>
+    <div class="bg-grid-overlay"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">M U S A</a>
+            <div class="nav-actions">
+                <button class="btn btn-primary-glow open-contact-modal" id="letsTalkBtn">
+                    <span>Let's Talk</span>
+                </button>
+                <button class="menu-toggle-btn" id="menuToggle" aria-label="Toggle Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <span class="logo">M U S A</span>
+            <button class="close-drawer-btn" id="closeDrawer">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="#hero" class="drawer-link">Beranda</a>
+            <a href="#works" class="drawer-link">Selected Works</a>
+            <a href="#experience" class="drawer-link">Pengalaman</a>
+            <a href="#skills" class="drawer-link">Keahlian</a>
+            <a href="#services" class="drawer-link">Layanan</a>
+            <a href="#about" class="drawer-link">Tentang Saya</a>
+            <a href="#contact" class="drawer-link">Kontak</a>
+        </nav>
+        <div class="drawer-footer">
+            <p>© 2026 MUSA. All rights reserved.</p>
+        </div>
+    </div>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+    <!-- SECTION 1: HERO SECTION (EXACT RECREATION OF USER DESIGN) -->
+    <section class="hero-section exact-hero-section" id="hero">
+        <!-- Full-Bleed Orange Lighting Portrait Background -->
+        <div class="hero-full-bg-wrapper">
+            <img src="assets/Musa.png" alt="Musadad Suudi - Creative Director" class="hero-full-bg-img">
+            <div class="hero-full-bg-overlay-left"></div>
+            <div class="hero-full-bg-overlay-bottom"></div>
+        </div>
+
+        <div class="container hero-exact-container">
+            <!-- Left Headline Block -->
+            <div class="hero-exact-left">
+                <h1 class="hero-exact-title">
+                    Turning<br>
+                    Ideas into<br>
+                    Visual Stories
+                </h1>
+
+                <!-- Quick Stats Row -->
+                <div class="hero-exact-stats">
+                    <div class="stat-exact-item">
+                        <span class="stat-exact-num">6+</span>
+                        <span class="stat-exact-lbl">Tahun Pengalaman</span>
+                    </div>
+                    <div class="stat-exact-sep"></div>
+                    <div class="stat-exact-item">
+                        <span class="stat-exact-num">50+</span>
+                        <span class="stat-exact-lbl">Proyek Selesai</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Bio & Action Block -->
+            <div class="hero-exact-right">
+                <div class="hero-right-header">
+                    <span class="hero-right-tag">
+                        <span class="orange-dot-small"></span>
+                        <span>CREATIVE DIRECTOR & CONTENT CREATOR</span>
+                    </span>
+                    <h2 class="hero-right-name">Musadadus Suudi</h2>
+                </div>
+
+                <p class="hero-exact-desc">
+                    Saya adalah Creative Director & Content Creator yang berfokus pada visual storytelling, video
+                    production, photography, dan creative content untuk brand, event, dan individu.
+                </p>
+
+                <div class="hero-exact-cta-row">
+                    <div class="hero-exact-line"></div>
+                    <a href="#works" class="hero-btn-dark-pill">
+                        <span>Lihat Karya Saya</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: SELECTED WORKS / PORTFOLIO -->
+    <section class="works-section" id="works">
+        <div class="works-spotlight-top"></div>
+        <div class="works-spotlight-right"></div>
+
+        <div class="container works-container">
+
+            <!-- Section Header -->
+            <div class="works-header-top">
+                <div class="works-title-area">
+                    <span class="section-subtitle-tag">SELECTED WORKS —</span>
+                    <h2 class="section-main-title">
+                        Selected <span class="gradient-text">Works.</span>
+                    </h2>
+                </div>
+                <div class="works-header-desc">
+                    <p>
+                        Kumpulan karya pilihan dari berbagai proyek yang pernah saya kerjakan, mulai dari event, live
+                        streaming, social media content, hingga produksi video dan fotografi. Setiap karya memiliki
+                        cerita, strategi, dan tujuan yang berbeda, dengan hasil visual yang relevan dan berdampak.
+                    </p>
+                </div>
+                <div class="works-header-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">VISUAL STORIES THAT WORK</span>
+                </div>
+            </div>
+
+            <!-- Filter Navigation Bar -->
+            <div class="works-filter-bar">
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="event">Event</button>
+                    <button class="filter-btn" data-filter="streaming">Streaming</button>
+                    <button class="filter-btn" data-filter="social">Social Media</button>
+                    <button class="filter-btn" data-filter="personal">Personal Brand</button>
+                    <button class="filter-btn" data-filter="bts">Behind The Scene</button>
+                </div>
+                <div class="filter-all-link" style="display: flex; align-items: center; gap: 0.8rem;">
+                    <button class="btn btn-primary-glow btn-sm" id="openAddActivityModal" style="padding: 0.6rem 1.3rem; font-size: 0.88rem; border-radius: 9999px;">
+                        <i data-lucide="plus-circle"></i>
+                        <span>+ Tambah Kegiatan Baru</span>
+                    </button>
+                    <button class="btn btn-outline-pill open-contact-modal">
+                        <span>Lihat Semua Karya</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Portfolio Grid (6 Items) -->
+            <div class="works-grid" id="worksGrid">
+
+                <!-- Card 1 -->
+                <div class="work-card" data-category="event streaming" data-id="ml-event">
+                    <div class="work-image-holder">
+                        <img src="assets/work_ml_event.png" alt="Liga Nasional Mobile Legends">
+                        <span class="work-category-badge">EVENT DOCUMENTATION</span>
+                        <button class="work-play-btn" aria-label="Play Project Video">
+                            <i data-lucide="play"></i>
+                        </button>
+                        <div class="work-img-overlay"></div>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">Liga Nasional Mobile Legends</h3>
+                        <p class="work-desc">Event documentation, live streaming, dan behind the scene.</p>
+                        <div class="work-tags">
+                            <span class="tag-pill">VIDEO</span>
+                            <span class="tag-pill">PHOTO</span>
+                            <span class="tag-pill">BEHIND THE SCENE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="work-card" data-category="event personal" data-id="sports-photo">
+                    <div class="work-image-holder">
+                        <img src="assets/work_sports_photo.png" alt="Sports Photography">
+                        <span class="work-category-badge">SPORTS</span>
+                        <button class="work-play-btn" aria-label="Play Project Video">
+                            <i data-lucide="play"></i>
+                        </button>
+                        <div class="work-img-overlay"></div>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">Sports Photography</h3>
+                        <p class="work-desc">Dokumentasi foto & video untuk berbagai event motorsport.</p>
+                        <div class="work-tags">
+                            <span class="tag-pill">VIDEO</span>
+                            <span class="tag-pill">PHOTO</span>
+                            <span class="tag-pill">BEHIND THE SCENE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="work-card" data-category="event streaming" data-id="mass-event">
+                    <div class="work-image-holder">
+                        <img src="assets/work_event_mass.png" alt="Event Vaksinasi Massal Pelajar">
+                        <span class="work-category-badge">EVENT</span>
+                        <button class="work-play-btn" aria-label="Play Project Video">
+                            <i data-lucide="play"></i>
+                        </button>
+                        <div class="work-img-overlay"></div>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">Event Vaksinasi Massal Pelajar</h3>
+                        <p class="work-desc">Event documentation, multi-camera live streaming, dan konten publikasi.</p>
+                        <div class="work-tags">
+                            <span class="tag-pill">VIDEO</span>
+                            <span class="tag-pill">PHOTO</span>
+                            <span class="tag-pill">BEHIND THE SCENE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="work-card" data-category="social" data-id="daily-content">
+                    <div class="work-image-holder">
+                        <img src="assets/Kultur Kelana 1.png" alt="Daily Content">
+                        <span class="work-category-badge">DAILY CONTEN</span>
+                        <button class="work-play-btn" aria-label="Play Project Video">
+                            <i data-lucide="play"></i>
+                        </button>
+                        <div class="work-img-overlay"></div>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">Kultur Kelana</h3>
+                        <p class="work-desc">Produksi konten harian untuk brand dan media sosial Kultur Kelana.</p>
+                        <div class="work-tags">
+                            <span class="tag-pill">VIDEO</span>
+                            <span class="tag-pill">PHOTO</span>
+                            <span class="tag-pill">BEHIND THE SCENE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="work-card" data-category="personal social" data-id="edu-content">
+                    <div class="work-image-holder">
+                        <img src="assets/Judo 1.png" alt="Educational Content">
+                        <span class="work-category-badge">DAILY CONTEN</span>
+                        <button class="work-play-btn" aria-label="Play Project Video">
+                            <i data-lucide="play"></i>
+                        </button>
+                        <div class="work-img-overlay"></div>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">Judo Kota Pontianak</h3>
+                        <p class="work-desc">Konten edukasi, tips, dan personal branding untuk berbagai platform.</p>
+                        <div class="work-tags">
+                            <span class="tag-pill">VIDEO</span>
+                            <span class="tag-pill">PHOTO</span>
+                            <span class="tag-pill">BEHIND THE SCENE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="work-card" data-category="social event" data-id="video-prod">
+                    <div class="work-image-holder">
+                        <img src="assets/work_video_prod.png" alt="Video Production">
+                        <span class="work-category-badge">CREATIVE</span>
+                        <button class="work-play-btn" aria-label="Play Project Video">
+                            <i data-lucide="play"></i>
+                        </button>
+                        <div class="work-img-overlay"></div>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">Video Production</h3>
+                        <p class="work-desc">Produksi video, fotografi, campaign content, dan creative direction.</p>
+                        <div class="work-tags">
+                            <span class="tag-pill">VIDEO</span>
+                            <span class="tag-pill">PHOTO</span>
+                            <span class="tag-pill">BEHIND THE SCENE</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: EXPERIENCE SECTION -->
+    <section class="experience-section" id="experience">
+        <div class="experience-spotlight-top"></div>
+        <div class="experience-spotlight-bottom"></div>
+
+        <div class="container experience-container">
+
+            <!-- Left Side: Title, Subtitle, Description & Download CV Button -->
+            <div class="experience-left">
+                <div class="experience-header">
+                    <span class="section-subtitle-tag">EXPERIENCE —</span>
+                    <h2 class="section-main-title">
+                        My Journey <br>
+                        <span class="gradient-text">So Far.</span>
+                    </h2>
+                </div>
+                <p class="experience-desc">
+                    Setiap pengalaman memberi banyak pelajaran dan membentuk cara saya melihat sebuah cerita dari sudut
+                    yang lebih luas. Perjalanan ini menjadi bagian penting dari proses saya untuk terus berkembang di
+                    dunia kreatif.
+                </p>
+                <div class="experience-cta">
+                    <button class="btn btn-dark-pill open-contact-modal">
+                        <span>Download CV</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    <div class="timeline-scroll-badge">
+                        <i data-lucide="arrow-down-up"></i>
+                        <span>Scroll timeline untuk pengalaman lainnya</span>
+                    </div>
+                </div>
+                <!-- Giant Background Watermark Text -->
+                <div class="experience-watermark">EXPERIENCE</div>
+            </div>
+
+            <!-- Right Side: Vertical Timeline -->
+            <div class="experience-right">
+                <div class="timeline">
+                    <div class="timeline-track-line"></div>
+
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta-col">
+                                <span class="timeline-date">Jan 2026 – Present</span>
+                                <h3 class="timeline-role">Managing Director</h3>
+                                <span class="timeline-company">Burnian Creative</span>
+                                <div class="timeline-tags">
+                                    <span>Full-time</span>
+                                    <span class="tag-sep">•</span>
+                                    <span>Indonesia</span>
+                                    <span class="tag-sep">•</span>
+                                    <span>On-site</span>
+                                </div>
+                            </div>
+                            <div class="timeline-desc-col">
+                                <p>Mengembangkan arah kreatif, memimpin tim, serta mengelola berbagai proyek kreatif di
+                                    bawah Burnian Creative.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta-col">
+                                <span class="timeline-date">Jan 2022 – Dec 2025</span>
+                                <h3 class="timeline-role">Senior Content Creator</h3>
+                                <span class="timeline-company">PT. Kreasi Putra Hotama</span>
+                                <div class="timeline-tags">
+                                    <span>Full-time</span>
+                                    <span class="tag-sep">•</span>
+                                    <span>Indonesia</span>
+                                </div>
+                            </div>
+                            <div class="timeline-desc-col">
+                                <p>Membuat dan mengembangkan konten visual untuk kebutuhan brand, event, dan digital
+                                    campaign.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta-col">
+                                <span class="timeline-date">Nov 2021 – Jul 2026</span>
+                                <h3 class="timeline-role">Content Creator</h3>
+                                <span class="timeline-company">Qara'a</span>
+                                <div class="timeline-tags">
+                                    <span>Full-time</span>
+                                    <span class="tag-sep">•</span>
+                                    <span>Indonesia</span>
+                                </div>
+                            </div>
+                            <div class="timeline-desc-col">
+                                <p>Produksi konten edukatif dan kreatif untuk media sosial, termasuk konsep, produksi,
+                                    hingga publikasi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta-col">
+                                <span class="timeline-date">Feb 2022 – Aug 2022</span>
+                                <h3 class="timeline-role">Videographer & Editor</h3>
+                                <span class="timeline-company">Dompet Ummat</span>
+                                <div class="timeline-tags">
+                                    <span>Part-time</span>
+                                    <span class="tag-sep">•</span>
+                                    <span>Indonesia</span>
+                                </div>
+                            </div>
+                            <div class="timeline-desc-col">
+                                <p>Mengambil footage, mengedit video, dan mendukung kebutuhan konten untuk program dan
+                                    event Dompet Ummat.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta-col">
+                                <span class="timeline-date">Jan 2020 – Dec 2020</span>
+                                <h3 class="timeline-role">Videographer & Editor</h3>
+                                <span class="timeline-company">Masjid Kapal Munzalan Indonesia</span>
+                                <div class="timeline-tags">
+                                    <span>Full-time</span>
+                                    <span class="tag-sep">•</span>
+                                    <span>Indonesia</span>
+                                </div>
+                            </div>
+                            <div class="timeline-desc-col">
+                                <p>Produksi video untuk kajian, event, dan konten dakwah, mulai dari pengambilan gambar
+                                    hingga editing final.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta-col">
+                                <span class="timeline-date">Oct 2019 – Mar 2020</span>
+                                <h3 class="timeline-role">Team Creative</h3>
+                                <span class="timeline-company">Munzalan Studio</span>
+                                <div class="timeline-tags">
+                                    <span>Part-time</span>
+                                    <span class="tag-sep">•</span>
+                                    <span>Indonesia</span>
+                                </div>
+                            </div>
+                            <div class="timeline-desc-col">
+                                <p>Mendukung tim kreatif dalam produksi konten digital, desain, dan kebutuhan visual
+                                    lainnya untuk berbagai program.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: TOOLS & SKILLS SECTION -->
+    <section class="skills-section" id="skills">
+        <div class="skills-spotlight-top"></div>
+        <div class="skills-spotlight-bottom"></div>
+
+        <div class="container skills-container">
+
+            <!-- Skills Header -->
+            <div class="skills-header-area">
+                <div class="skills-title-block">
+                    <div class="skills-subtitle-tag">
+                        <span class="orange-dot-small"></span>
+                        <span>SKILLS —</span>
+                    </div>
+                    <h2 class="section-main-title">
+                        Tools & Skills <br>
+                        <span class="gradient-text">I Use.</span>
+                    </h2>
+                </div>
+                <div class="skills-desc-block">
+                    <p>
+                        Kombinasi antara kreativitas, teknik produksi, dan strategi konten untuk menghasilkan karya yang
+                        maksimal.
+                    </p>
+                </div>
+                <div class="skills-watermark">SKILLS</div>
+            </div>
+
+            <!-- Skills 4-Card Grid -->
+            <div class="skills-cards-grid">
+
+                <!-- Card 01 -->
+                <div class="skill-card">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-box">
+                            <i data-lucide="video"></i>
+                        </div>
+                        <span class="skill-number">01</span>
+                    </div>
+                    <h3 class="skill-card-title">Video Editing</h3>
+                    <p class="skill-card-desc">Mengolah footage menjadi cerita visual yang kuat dan berdampak.</p>
+
+                    <div class="skill-tools-list">
+                        <div class="tool-pill">
+                            <span class="brand-badge pr">Pr</span>
+                            <span class="tool-name">Adobe Premiere Pro</span>
+                        </div>
+                        <div class="tool-pill">
+                            <span class="brand-badge ae">Ae</span>
+                            <span class="tool-name">Adobe After Effects</span>
+                        </div>
+                        <div class="tool-pill">
+                            <span class="brand-badge capcut"><i data-lucide="scissors"></i></span>
+                            <span class="tool-name">CapCut</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 02 -->
+                <div class="skill-card">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-box">
+                            <i data-lucide="image"></i>
+                        </div>
+                        <span class="skill-number">02</span>
+                    </div>
+                    <h3 class="skill-card-title">Design & Visual</h3>
+                    <p class="skill-card-desc">Membuat visual yang menarik untuk berbagai kebutuhan konten.</p>
+
+                    <div class="skill-tools-list">
+                        <div class="tool-pill">
+                            <span class="brand-badge canva">Canva</span>
+                            <span class="tool-name">Canva</span>
+                        </div>
+                        <div class="tool-pill">
+                            <span class="brand-badge ai"><i data-lucide="sparkles"></i></span>
+                            <span class="tool-name">AI Image Generation</span>
+                        </div>
+                        <div class="tool-pill">
+                            <span class="brand-badge ps">Ps</span>
+                            <span class="tool-name">Photo Editing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 03 -->
+                <div class="skill-card">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-box">
+                            <i data-lucide="camera"></i>
+                        </div>
+                        <span class="skill-number">03</span>
+                    </div>
+                    <h3 class="skill-card-title">Production</h3>
+                    <p class="skill-card-desc">Memproduksi konten dengan standar visual yang profesional.</p>
+
+                    <div class="skill-tools-list">
+                        <div class="tool-pill">
+                            <i data-lucide="video" class="tool-icon"></i>
+                            <span class="tool-name">Videography</span>
+                        </div>
+                        <div class="tool-pill">
+                            <i data-lucide="camera" class="tool-icon"></i>
+                            <span class="tool-name">Photography</span>
+                        </div>
+                        <div class="tool-pill">
+                            <i data-lucide="computer" class="tool-icon"></i>
+                            <span class="tool-name">Editor Video</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 04 -->
+                <div class="skill-card">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-box">
+                            <i data-lucide="layers"></i>
+                        </div>
+                        <span class="skill-number">04</span>
+                    </div>
+                    <h3 class="skill-card-title">Content & Strategy</h3>
+                    <p class="skill-card-desc">Mengembangkan ide, strategi, dan konten yang relevan untuk brand.</p>
+
+                    <div class="skill-tools-list">
+                        <div class="tool-pill">
+                            <i data-lucide="file-text" class="tool-icon"></i>
+                            <span class="tool-name">Content Writing</span>
+                        </div>
+                        <div class="tool-pill">
+                            <i data-lucide="bar-chart-2" class="tool-icon"></i>
+                            <span class="tool-name">Social Media Content</span>
+                        </div>
+                        <div class="tool-pill">
+                            <i data-lucide="lightbulb" class="tool-icon"></i>
+                            <span class="tool-name">Creative Direction</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5: SERVICES SECTION -->
+    <section class="services-section" id="services">
+        <div class="services-spotlight-top"></div>
+        <div class="services-spotlight-bottom"></div>
+
+        <div class="container services-container">
+
+            <!-- Services Left Column: Header, Desc, Button & Watermark -->
+            <div class="services-left">
+                <div class="services-header">
+                    <div class="section-subtitle-tag flex-tag">
+                        <span class="orange-dot-small"></span>
+                        <span>SERVICES —</span>
+                    </div>
+                    <h2 class="section-main-title">
+                        What I Can <br>
+                        <span class="gradient-text">Do For You.</span>
+                    </h2>
+                </div>
+                <p class="services-desc">
+                    Solusi kreatif untuk kebutuhan konten, produksi, event, hingga pengembangan brand dengan hasil
+                    visual yang relevan dan berdampak.
+                </p>
+                <div class="services-cta">
+                    <button class="btn btn-dark-pill open-contact-modal">
+                        <span>Diskusi Project</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+                <!-- Giant Background Watermark Text -->
+                <div class="services-watermark">SERVICES</div>
+            </div>
+
+            <!-- Services Right Column: 6 Cards in 2-Column Grid -->
+            <div class="services-grid-right">
+
+                <!-- Card 01 -->
+                <div class="service-block-card">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i data-lucide="video"></i>
+                        </div>
+                        <span class="service-card-number">01</span>
+                    </div>
+                    <h3 class="service-card-title">Video Production</h3>
+                    <div class="service-card-divider"></div>
+                    <p class="service-card-desc">Concept → Shooting → Editing → Final Video</p>
+                </div>
+
+                <!-- Card 02 -->
+                <div class="service-block-card">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i data-lucide="camera"></i>
+                        </div>
+                        <span class="service-card-number">02</span>
+                    </div>
+                    <h3 class="service-card-title">Event Documentation</h3>
+                    <div class="service-card-divider"></div>
+                    <p class="service-card-desc">Photography & Videography untuk event, sports, dan corporate.</p>
+                </div>
+
+                <!-- Card 03 -->
+                <div class="service-block-card">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <span class="service-card-number">03</span>
+                    </div>
+                    <h3 class="service-card-title">Social Media Content</h3>
+                    <div class="service-card-divider"></div>
+                    <p class="service-card-desc">Short-form video, educational content, daily content, dan brand
+                        content.</p>
+                </div>
+
+                <!-- Card 04 -->
+                <div class="service-block-card">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <span class="service-card-number">04</span>
+                    </div>
+                    <h3 class="service-card-title">Personal Branding</h3>
+                    <div class="service-card-divider"></div>
+                    <p class="service-card-desc">Membangun visual identity dan konten untuk personal brand.</p>
+                </div>
+
+                <!-- Card 05 -->
+                <div class="service-block-card">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i data-lucide="lightbulb"></i>
+                        </div>
+                        <span class="service-card-number">05</span>
+                    </div>
+                    <h3 class="service-card-title">Creative Direction</h3>
+                    <div class="service-card-divider"></div>
+                    <p class="service-card-desc">Mengembangkan konsep dan mengarahkan produksi visual dari awal sampai
+                        akhir.</p>
+                </div>
+
+                <!-- Card 06 -->
+                <div class="service-block-card">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i data-lucide="sparkles"></i>
+                        </div>
+                        <span class="service-card-number">06</span>
+                    </div>
+                    <h3 class="service-card-title">AI Imagine Design & Video</h3>
+                    <div class="service-card-divider"></div>
+                    <p class="service-card-desc">Memproduksi gambar & video dengan AI yang natural, realistis, dan
+                        berkualitas tinggi tanpa terlihat AI banget.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 6: ABOUT / PROFILE SECTION -->
+    <section class="about-section" id="about">
+        <div class="about-spotlight"></div>
+        <div class="container about-container">
+
+            <!-- Left Header / Name Badge -->
+            <div class="about-left-header">
+                <div class="about-name-block">
+                    <span class="section-subtitle-tag">ABOUT —</span>
+                    <h2 class="name-first">Musadadus</h2>
+                    <h2 class="name-last">Suudi</h2>
+                    <span class="role-badge">CREATIVE PROFESSIONAL</span>
+                </div>
+                <!-- Giant Background Watermark -->
+                <div class="about-watermark">ABOUT</div>
+            </div>
+
+            <!-- Right Content & Paragraphs -->
+            <div class="about-right-content">
+                <div class="about-paragraphs">
+                    <p class="paragraph-lead">
+                        Saya adalah <span class="highlight">creative professional</span> yang berfokus pada <span
+                            class="highlight">content creator</span>, <span class="highlight">videography</span>,
+                        <span class="highlight">photography</span>, dan <span class="highlight">visual
+                            storytelling</span>.
+                    </p>
+                    <p>
+                        Dengan pengalaman di berbagai proyek kreatif, digital content, event, sports, dan brand
+                        communication, saya terbiasa mengembangkan ide dari tahap konsep hingga menjadi sebuah karya
+                        visual yang siap dipublikasikan.
+                    </p>
+                    <p>
+                        Saya memiliki pengalaman sebagai Creative Content, Content Creator, Project Leader, hingga
+                        Managing Director, dengan kemampuan menggabungkan sisi kreatif, teknis produksi, dan
+                        koordinasi
+                        project dalam satu workflow.
+                    </p>
+                    <p>
+                        Saat ini saya aktif mengembangkan creative projects melalui <span
+                            class="highlight-brand">Burnian Creative</span>.
+                    </p>
+                </div>
+
+                <!-- Specialization Cards Grid -->
+                <div class="services-grid">
+                    <!-- Card 1 -->
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 7: CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="contact-spotlight-left"></div>
+        <div class="contact-spotlight-right"></div>
+
+        <div class="container contact-container">
+
+            <!-- Contact Left Block: Header, Desc & Info Cards -->
+            <div class="contact-left-block">
+                <div class="contact-header">
+                    <div class="section-subtitle-tag flex-tag">
+                        <span class="orange-dot-small"></span>
+                        <span>CONTACT —</span>
+                    </div>
+                    <h2 class="section-main-title">
+                        Let's Create <br>
+                        Something <br>
+                        <span class="gradient-text">Great Together.</span>
+                    </h2>
+                </div>
+                <p class="contact-desc">
+                    Punya project, ide, atau ingin bekerja sama? Saya terbuka untuk diskusi dan kolaborasi.
+                </p>
+
+                <!-- Contact Information Rows Grid -->
+                <div class="contact-info-grid">
+
+                    <!-- Vertical List Box (Location, Phone, Email, Instagram) -->
+                    <div class="contact-list-box">
+                        <!-- Item 1: Location -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <span class="contact-val">Pontianak, Indonesia</span>
+                                <span class="contact-lbl">Location</span>
+                            </div>
+                        </div>
+                        <div class="info-item-divider"></div>
+
+                        <!-- Item 2: Phone -->
+                        <a href="https://wa.me/6283830704227" target="_blank" class="contact-info-item clickable-info">
+                            <div class="contact-info-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <span class="contact-val">083830704227</span>
+                                <span class="contact-lbl">Phone</span>
+                            </div>
+                        </a>
+                        <div class="info-item-divider"></div>
+
+                        <!-- Item 3: Email -->
+                        <a href="mailto:suudisoudi@gmail.com" class="contact-info-item clickable-info">
+                            <div class="contact-info-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <span class="contact-val">suudisoudi@gmail.com</span>
+                                <span class="contact-lbl">Email</span>
+                            </div>
+                        </a>
+                        <div class="info-item-divider"></div>
+
+                        <!-- Item 4: Instagram -->
+                        <a href="https://instagram.com/musadadussuudi" target="_blank"
+                            class="contact-info-item clickable-info">
+                            <div class="contact-info-icon">
+                                <i data-lucide="instagram"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <span class="contact-val">@musadadussuudi</span>
+                                <span class="contact-lbl">Instagram</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Portfolio Link Sub-box -->
+                    <a href="https://musadadussuudi.com" target="_blank" class="contact-portfolio-card">
+                        <div class="portfolio-card-top">
+                            <div class="portfolio-icon">
+                                <i data-lucide="link"></i>
+                            </div>
+                            <div class="portfolio-meta">
+                                <span class="portfolio-tag">PORTFOLIO</span>
+                                <h4 class="portfolio-url">musadadussuudi.com</h4>
+                            </div>
+                            <i data-lucide="arrow-up-right" class="external-arrow"></i>
+                        </div>
+                        <p class="portfolio-card-sub">
+                            Lihat karya, project, dan pengalaman lengkap saya di website portfolio.
+                        </p>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Right Block: Glowing Banner CTA Card -->
+            <div class="contact-right-block">
+                <div class="featured-cta-card">
+                    <div class="cta-glow-bg"></div>
+                    <div class="cta-card-content">
+                        <span class="orange-dot-small mb-dot"></span>
+                        <h3 class="cta-card-title">Have a project in mind?</h3>
+                        <p class="cta-card-sub">Let's create something worth watching.</p>
+                        <button class="btn btn-primary-glow btn-lg-glow open-contact-modal">
+                            <span>Get in Touch</span>
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Giant Background Watermark Text -->
+                <div class="contact-watermark">CONTACT</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="logo">M U S A</a>
+                    <p class="footer-tagline">Turning Ideas into Visual Stories.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://instagram.com/musadadussuudi" target="_blank" class="social-link"
+                        title="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="social-link" title="YouTube"><i data-lucide="youtube"></i></a>
+                    <a href="#" class="social-link" title="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="mailto:suudisoudi@gmail.com" class="social-link" title="Email"><i
+                            data-lucide="mail"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Musadadus Suudi. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#about">Tentang</a>
+                    <a href="#experience">Pengalaman</a>
+                    <a href="#skills">Keahlian</a>
+                    <a href="#services">Layanan</a>
+                    <a href="#works">Karya</a>
+                    <a href="#contact">Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL 1: CONTACT / LET'S TALK MODAL -->
+    <div class="modal" id="contactModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeContactModal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-header">
+                <span class="modal-subtitle">HUBUNGI SAYA</span>
+                <h3>Mari Diskusi Proyek Anda</h3>
+                <p>Isi formulir di bawah ini dan saya akan membalas pesan Anda secepatnya.</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" required placeholder="Masukkan nama Anda">
+                </div>
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" required placeholder="nama@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="service">Layanan yang Dibutuhkan</label>
+                    <select id="service" required>
+                        <option value="content">Content Creator / Social Media</option>
+                        <option value="video">Videography & Film Production</option>
+                        <option value="photo">Photography & Event</option>
+                        <option value="storytelling">Visual Storytelling & Direction</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan / Brief Proyek</label>
+                    <textarea id="message" rows="4" required
+                        placeholder="Jelaskan secara singkat mengenai proyek Anda..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary-glow btn-full">
+                    <span>Kirim Pesan</span>
+                    <i data-lucide="send"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 2: PORTFOLIO LIGHTBOX MODAL WITH SIMULTANEOUS 3-PHOTO SHOWCASE & NAV ARROWS -->
+    <div class="modal" id="workModal">
+        <div class="modal-backdrop"></div>
+
+        <!-- Navigation Floating Buttons (Prev & Next) -->
+        <button class="modal-nav-btn modal-nav-prev" id="prevWorkBtn" aria-label="Proyek Sebelumnya"
+            title="Proyek Sebelumnya (Panah Kiri)">
+            <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="modal-nav-btn modal-nav-next" id="nextWorkBtn" aria-label="Proyek Berikutnya"
+            title="Proyek Berikutnya (Panah Kanan)">
+            <i data-lucide="chevron-right"></i>
+        </button>
+
+        <div class="modal-content modal-content-lg">
+            <button class="modal-close" id="closeWorkModal" aria-label="Tutup">
+                <i data-lucide="x"></i>
+            </button>
+
+            <div class="modal-body-work">
+                <!-- Left Column: 3 Photos Displayed Simultaneously in a Showcase Grid -->
+                <div class="work-modal-media-showcase" id="workModalShowcase">
+                    <div class="showcase-hint-badge">
+                        <i data-lucide="maximize-2"></i>
+                        <span>Klik gambar untuk tampilan Full Screen</span>
+                    </div>
+
+                    <!-- Photo 1: Main Photo / Video Banner (Top) -->
+                    <div class="showcase-main-photo clickable-photo" data-photo-index="0"
+                        title="Klik untuk memperbesar gambar">
+                        <img src="" id="modalPhoto1" alt="Dokumentasi Utama 1">
+                        <div class="photo-expand-overlay">
+                            <i data-lucide="maximize-2"></i>
+                            <span>Klik untuk Full Screen</span>
+                        </div>
+                        <span class="showcase-photo-badge" id="badgePhoto1">1. Foto Utama / Panggung</span>
+                    </div>
+
+                    <!-- Sub Photos Row: Photo 2 & Photo 3 Side-by-Side (Bottom) -->
+                    <div class="showcase-sub-photos">
+                        <div class="sub-photo-item clickable-photo" data-photo-index="1"
+                            title="Klik untuk memperbesar gambar">
+                            <img src="" id="modalPhoto2" alt="Dokumentasi 2">
+                            <div class="photo-expand-overlay">
+                                <i data-lucide="maximize-2"></i>
+                                <span>Full Screen</span>
+                            </div>
+                            <span class="showcase-photo-badge" id="badgePhoto2">2. Behind The Scene</span>
+                        </div>
+                        <div class="sub-photo-item clickable-photo" data-photo-index="2"
+                            title="Klik untuk memperbesar gambar">
+                            <img src="" id="modalPhoto3" alt="Dokumentasi 3">
+                            <div class="photo-expand-overlay">
+                                <i data-lucide="maximize-2"></i>
+                                <span>Full Screen</span>
+                            </div>
+                            <span class="showcase-photo-badge" id="badgePhoto3">3. Detail Liputan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Project Details & Short Activity Description -->
+                <div class="work-modal-details">
+                    <div class="modal-details-top">
+                        <span class="work-category-badge" id="workModalCategory">EVENT DOCUMENTATION</span>
+                        <span class="modal-filter-badge" id="modalFilterIndicator">Filter: All</span>
+                    </div>
+
+                    <h2 id="workModalTitle" class="modal-work-title">Project Title</h2>
+
+                    <div class="work-activity-card">
+                        <div class="activity-card-header">
+                            <i data-lucide="file-text" class="activity-icon"></i>
+                            <span>Deskripsi Kegiatan:</span>
+                        </div>
+                        <p id="workModalDesc" class="activity-desc-text">Deskripsi kegiatan singkat.</p>
+                    </div>
+
+                    <div class="work-tags" id="workModalTags"></div>
+
+                    <div class="modal-footer-nav">
+                        <span class="modal-counter-text" id="modalCounterText">Proyek 1 dari 6</span>
+                        <button class="btn btn-primary-glow open-contact-modal">
+                            <span>Diskusi Proyek Serupa</span>
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: FULLSCREEN IMAGE LIGHTBOX MODAL -->
+    <div class="lightbox-modal" id="lightboxModal" aria-hidden="true">
+        <div class="lightbox-backdrop" id="closeLightboxBackdrop"></div>
+
+        <!-- Lightbox Close Button -->
+        <button class="lightbox-close" id="closeLightbox" aria-label="Tutup Full Screen"
+            title="Tutup Full Screen (Esc)">
+            <i data-lucide="x"></i>
+        </button>
+
+        <!-- Lightbox Navigation Buttons -->
+        <button class="lightbox-nav lightbox-prev" id="prevLightboxBtn" aria-label="Foto Sebelumnya"
+            title="Foto Sebelumnya (Panah Kiri)">
+            <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next" id="nextLightboxBtn" aria-label="Foto Berikutnya"
+            title="Foto Berikutnya (Panah Kanan)">
+            <i data-lucide="chevron-right"></i>
+        </button>
+
+        <!-- Lightbox Content Container -->
+        <div class="lightbox-content-box">
+            <div class="lightbox-image-container">
+                <img src="" id="lightboxImg" alt="Dokumentasi Kegiatan Full Screen">
+            </div>
+            <div class="lightbox-caption-bar">
+                <div class="lightbox-caption-info">
+                    <span class="lightbox-project-badge" id="lightboxProjectTitle">Judul Kegiatan</span>
+                    <h4 class="lightbox-photo-title" id="lightboxPhotoLabel">Foto Dokumentasi</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 4: FORM INPUT DATA KEGIATAN BARU (ADMIN PANEL) -->
+    <div class="modal" id="addActivityModal">
+        <div class="modal-backdrop" id="closeAddActivityBackdrop"></div>
+        <div class="modal-content modal-content-admin">
+            <button class="modal-close" id="closeAddActivityModal" aria-label="Tutup">
+                <i data-lucide="x"></i>
+            </button>
+
+            <div class="modal-header">
+                <span class="modal-subtitle">FORM MANAJEMEN PORTFOLIO</span>
+                <h3>Tambah Data Kegiatan Baru</h3>
+                <p>Isi detail kegiatan & 3 foto dokumentasi. Data langsung tersimpan di web tanpa kodingan manual.</p>
+            </div>
+
+            <form id="addActivityForm" class="admin-activity-form">
+                <div class="form-grid-2">
+                    <div class="form-group">
+                        <label for="actTitle"><i data-lucide="heading"></i> Judul Kegiatan / Proyek *</label>
+                        <input type="text" id="actTitle" placeholder="Contoh: Liputan Konser Musik Pontianak" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="actBadge"><i data-lucide="award"></i> Badge Kategori Utama *</label>
+                        <input type="text" id="actBadge" placeholder="Contoh: EVENT DOCUMENTATION" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><i data-lucide="filter"></i> Kategori Filter (Pilih yang sesuai) *</label>
+                    <div class="category-checkbox-grid">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="actCategories" value="event" checked>
+                            <span class="checkbox-box"><i data-lucide="check"></i></span>
+                            <span class="checkbox-label">Event</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="actCategories" value="streaming">
+                            <span class="checkbox-box"><i data-lucide="check"></i></span>
+                            <span class="checkbox-label">Streaming</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="actCategories" value="social">
+                            <span class="checkbox-box"><i data-lucide="check"></i></span>
+                            <span class="checkbox-label">Social Media</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="actCategories" value="personal">
+                            <span class="checkbox-box"><i data-lucide="check"></i></span>
+                            <span class="checkbox-label">Personal Brand</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="actCategories" value="bts">
+                            <span class="checkbox-box"><i data-lucide="check"></i></span>
+                            <span class="checkbox-label">Behind The Scene</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="actDesc"><i data-lucide="align-left"></i> Deskripsi Kegiatan *</label>
+                    <textarea id="actDesc" rows="3" placeholder="Tuliskan gambaran lengkap tentang kegiatan ini..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="actTags"><i data-lucide="tag"></i> Tags Label (pisahkan koma) *</label>
+                    <input type="text" id="actTags" placeholder="VIDEO, PHOTO, BEHIND THE SCENE" value="VIDEO, PHOTO, BEHIND THE SCENE" required>
+                </div>
+
+                <!-- 3 Photos Input Section -->
+                <div class="photos-upload-section">
+                    <div class="section-label">
+                        <i data-lucide="images"></i>
+                        <span>Upload / Input 3 Foto Kegiatan & Keterangan Label</span>
+                    </div>
+
+                    <div class="photos-input-grid">
+                        <!-- Foto 1 -->
+                        <div class="photo-input-card">
+                            <div class="card-photo-header">
+                                <span class="photo-step-badge">FOTO 1 (UTAMA)</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="actFile1">Upload Gambar File</label>
+                                <input type="file" id="actFile1" accept="image/*" class="act-file-input" data-index="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="actUrl1">Atau Paste URL Foto</label>
+                                <input type="text" id="actUrl1" class="act-url-input" data-index="1" placeholder="https://...">
+                            </div>
+                            <div class="form-group">
+                                <label for="actLabel1">Label/Keterangan Foto 1</label>
+                                <input type="text" id="actLabel1" value="1. Panggung Utama & Live Stage" required>
+                            </div>
+                            <div class="photo-preview-box" id="previewBox1">
+                                <img id="prevImg1" src="" alt="Preview 1" class="prev-img hidden">
+                                <div class="prev-placeholder" id="prevPlace1">
+                                    <i data-lucide="image"></i>
+                                    <span>Preview Foto 1</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Foto 2 -->
+                        <div class="photo-input-card">
+                            <div class="card-photo-header">
+                                <span class="photo-step-badge">FOTO 2 (BEHIND SCENE)</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="actFile2">Upload Gambar File</label>
+                                <input type="file" id="actFile2" accept="image/*" class="act-file-input" data-index="2">
+                            </div>
+                            <div class="form-group">
+                                <label for="actUrl2">Atau Paste URL Foto</label>
+                                <input type="text" id="actUrl2" class="act-url-input" data-index="2" placeholder="https://...">
+                            </div>
+                            <div class="form-group">
+                                <label for="actLabel2">Label/Keterangan Foto 2</label>
+                                <input type="text" id="actLabel2" value="2. Behind The Scene / Ruang Kontrol" required>
+                            </div>
+                            <div class="photo-preview-box" id="previewBox2">
+                                <img id="prevImg2" src="" alt="Preview 2" class="prev-img hidden">
+                                <div class="prev-placeholder" id="prevPlace2">
+                                    <i data-lucide="image"></i>
+                                    <span>Preview Foto 2</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Foto 3 -->
+                        <div class="photo-input-card">
+                            <div class="card-photo-header">
+                                <span class="photo-step-badge">FOTO 3 (ATMOSPHERE)</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="actFile3">Upload Gambar File</label>
+                                <input type="file" id="actFile3" accept="image/*" class="act-file-input" data-index="3">
+                            </div>
+                            <div class="form-group">
+                                <label for="actUrl3">Atau Paste URL Foto</label>
+                                <input type="text" id="actUrl3" class="act-url-input" data-index="3" placeholder="https://...">
+                            </div>
+                            <div class="form-group">
+                                <label for="actLabel3">Label/Keterangan Foto 3</label>
+                                <input type="text" id="actLabel3" value="3. Detail Liputan & Euforia" required>
+                            </div>
+                            <div class="photo-preview-box" id="previewBox3">
+                                <img id="prevImg3" src="" alt="Preview 3" class="prev-img hidden">
+                                <div class="prev-placeholder" id="prevPlace3">
+                                    <i data-lucide="image"></i>
+                                    <span>Preview Foto 3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admin-form-actions">
+                    <button type="submit" class="btn btn-primary-glow btn-submit-act">
+                        <i data-lucide="plus-circle"></i>
+                        <span>Simpan & Tampilkan di Website</span>
+                    </button>
+                    <button type="button" id="openExportCodeBtn" class="btn btn-outline-pill btn-export-code">
+                        <i data-lucide="code"></i>
+                        <span>Export Objek JS / Copy Code</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 5: EXPORT JS CODE MODAL -->
+    <div class="modal" id="exportModal">
+        <div class="modal-backdrop" id="closeExportBackdrop"></div>
+        <div class="modal-content modal-content-code">
+            <button class="modal-close" id="closeExportModal" aria-label="Tutup">
+                <i data-lucide="x"></i>
+            </button>
+
+            <div class="modal-header">
+                <span class="modal-subtitle">EXPORT CONFIGURATIONS</span>
+                <h3>Kode JavaScript Projects Database</h3>
+                <p>Salin kode di bawah jika Anda ingin menempelkan data kegiatan ini langsung secara permanen ke file <code>script.js</code>.</p>
+            </div>
+
+            <div class="code-export-box">
+                <textarea id="codeExportArea" readonly rows="12" class="code-export-textarea"></textarea>
+                <button id="copyCodeBtn" class="btn btn-primary-glow btn-sm copy-btn">
+                    <i data-lucide="copy"></i>
+                    <span>Salin Kode</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
